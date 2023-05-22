@@ -70,6 +70,10 @@ main {
     font-family: 'Inter'; /*TODO: import front*/
 }
 
+.color-word {
+    color: #07B464;
+}
+
 h1 {
     font-weight: 700;
     font-size: 48px;
