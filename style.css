@@ -67,6 +67,10 @@ a {
     color: inherit;
 }
 
+.advice {
+    display: flex;
+}
+
 main {
     display: flex;
     padding-top: 90px;
@@ -130,6 +134,10 @@ h1 {
     color: #1C1E52;
 }
 
+.way {
+    display: none;
+}
+
 /* Mobile ver/ */
 
 @media screen and (max-width: 1024px) {
@@ -142,10 +150,16 @@ h1 {
     }
 
     main {
+        display: block;
+        padding-top: 0;
+    }
+
+    .advice {
         flex-direction: column;
         padding-top: 0;
     }
 
+    
     .main-text {
         width: 100%;
         font-family: 'Inter';
@@ -182,4 +196,45 @@ h1 {
         margin-inline: 10%;
         margin-top: 20px;
     }
+
+    .way {
+        width: 100%;
+        display: block;
+        border: 0.663073px solid #DEDEDE;
+        border-radius: 6.63073px;
+    }
+
+    .atom {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 6px;
+        }
+    }
+
+    .atom-png {
+        width: 33px;
+    }
+
+    .maint-text-way {
+        width: 100%;
+        text-align: center;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.0663073px;
+        padding-inline: 36%;
+        padding-bottom: 12px;
+    }
+
+    .main-test-par-way {
+        width: 100%;
+        padding-inline: 27%;
+        font-family: 'Inter';
+        font-style: normal;
+        font-size: 11.9353px;
+        line-height: 16px;
+        text-align: center;
+        color: #5C5C5C;
+    }
 }
+
