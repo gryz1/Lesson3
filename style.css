@@ -17,6 +17,7 @@ body {
 header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 40px 32px;
 }
 
@@ -41,10 +42,17 @@ img {
     width: 100%;
 }
 
-ul {
+.menu-list {
     display: flex;
     gap: 42px;
     align-items: center;
+}
+
+.hamburger {
+    width: 24px;
+    height: 24px;
+    background: url(./img/hamburger.png);
+    display: none;
 }
 
 li {
@@ -68,6 +76,7 @@ main {
 .main-text {
     width: 50%;
     font-family: 'Inter'; /*TODO: import front*/
+
 }
 
 .color-word {
@@ -80,6 +89,7 @@ h1 {
     line-height: 64px;
     color: #1C1E52;
     margin-bottom: 22px;
+    width: 84%;
 }
 
 .main-text-par  {
@@ -100,7 +110,6 @@ h1 {
     color: #FFFFFF;
     padding: 15px 60px;
     margin-top: 10px;
-    display: inline-block;
 }
 
 .main-img {
@@ -119,4 +128,58 @@ h1 {
     font-size: 22px;
     line-height: 64px;
     color: #1C1E52;
+}
+
+/* Mobile ver/ */
+
+@media screen and (max-width: 1024px) {
+    .menu-list {
+        display: none;
+    }
+    
+    .hamburger {
+        display: block;
+    }
+
+    main {
+        flex-direction: column;
+        padding-top: 0;
+    }
+
+    .main-text {
+        width: 100%;
+        font-family: 'Inter';
+        padding-inline: 11%;
+    }
+
+    h1 {
+        width: auto;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+        text-align: center;
+    }
+
+    .main-text-par {
+        font-size: 12px;
+        line-height: 16px;
+        padding-inline: 14%;
+        text-align: center;
+    }
+
+    .know-more-buttom {
+        margin-top: 10px;
+        display: block;
+        margin: 0 auto;
+        width: 226px;
+    }
+
+    .main-img {
+        width: 100%;
+        margin-top: 0;
+        margin-inline: 10%;
+        margin-top: 20px;
+    }
 }
